@@ -254,6 +254,12 @@
         </LinearLayout>
 
         <TextView
+            android:id="@+id/empty_plane_region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CheckWeightRegion"/>
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/takeoff"
@@ -300,6 +306,12 @@
                 android:layout_height="wrap_content"
                 style="@style/CheckWeightOutput"/>
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/takeoff_region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CheckWeightRegion"/>
 
     </LinearLayout>
 </ScrollView>

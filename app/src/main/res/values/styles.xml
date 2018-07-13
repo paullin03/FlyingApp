@@ -37,4 +37,10 @@
         <item name="android:textColor">@android:color/black</item>
     </style>
 
+    <style name="CheckWeightRegion">
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+    </style>
+
 </resources>

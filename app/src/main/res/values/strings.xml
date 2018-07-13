@@ -18,5 +18,8 @@
     <string name="weight">Weight:</string>
     <string name="arm">Arm:</string>
     <string name="moment">Moment:</string>
+    <string name="out_of_bounds">Out of COG Bounds</string>
+    <string name="utility">Utility Category</string>
+    <string name="normal">Normal Category</string>
 
 </resources>
