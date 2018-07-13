@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">FlyingApp</string>
+    <string name="weight_check">Weight and Balance Checker</string>
+    <string name="checklist">Checklist</string>
+    <string name="calculate">Calculate</string>
+    <string name="empty_weight">Empty Weight (lb):</string>
+    <string name="empty_arm">Empty Arm (in):</string>
+    <string name="empty_moment">Empty Moment (lb*in):</string>
+    <string name="pilot_weight">Pilot Weight (lb):</string>
+    <string name="front_passenger_weight">Front Passenger Weight (lb):</string>
+    <string name="rear_passenger_one_weight">1st Rear Passenger Weight (lb):</string>
+    <string name="rear_passenger_two_weight">2nd Rear Passenger Weight (lb):</string>
+    <string name="baggage_weight">Baggage Weight (lb):</string>
+    <string name="gas_volume">Gas Volume (100LL in gallons):</string>
+    <string name="summary">Summary:</string>
+    <string name="empty_plane">Empty Plane:</string>
+    <string name="takeoff">Takeoff:</string>
+    <string name="weight">Weight:</string>
+    <string name="arm">Arm:</string>
+    <string name="moment">Moment:</string>
+
+</resources>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".CheckWeight"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_weight"
+                style="@style/CheckWeightTitle"
+                />
+
+            <EditText
+                android:id="@+id/empty_weight_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_arm"
+                style="@style/CheckWeightTitle"
+                />
+
+            <EditText
+                android:id="@+id/empty_arm_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_moment"
+                style="@style/CheckWeightTitle"
+                />
+
+            <EditText
+                android:id="@+id/empty_moment_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pilot_weight"
+                style="@style/CheckWeightTitle"
+                />
+
+            <EditText
+                android:id="@+id/pilot_weight_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/front_passenger_weight"
+                style="@style/CheckWeightTitle"
+                />
+
+            <EditText
+                android:id="@+id/front_passenger_weight_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rear_passenger_one_weight"
+                style="@style/CheckWeightTitle"
+                />
+
+            <EditText
+                android:id="@+id/rear_passenger_one_weight_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rear_passenger_two_weight"
+                style="@style/CheckWeightTitle"
+                />
+
+            <EditText
+                android:id="@+id/rear_passenger_two_weight_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/baggage_weight"
+                style="@style/CheckWeightTitle"
+                />
+
+            <EditText
+                android:id="@+id/baggage_weight_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gas_volume"
+                style="@style/CheckWeightTitle"
+                />
+
+            <EditText
+                android:id="@+id/gas_volume_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate"
+            android:onClick="calculate"
+            android:layout_marginLeft="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/summary"
+            style="@style/Header"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_plane"
+            style="@style/subHeader"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weight"
+                style="@style/CheckWeightTitle"/>
+
+            <TextView
+                android:id="@+id/empty_plane_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CheckWeightOutput"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/arm"
+                style="@style/CheckWeightTitle"/>
+
+            <TextView
+                android:id="@+id/empty_plane_arm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CheckWeightOutput"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/moment"
+                style="@style/CheckWeightTitle"/>
+
+            <TextView
+                android:id="@+id/empty_plane_moment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CheckWeightOutput"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/takeoff"
+            style="@style/subHeader"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weight"
+                style="@style/CheckWeightTitle"/>
+
+            <TextView
+                android:id="@+id/takeoff_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CheckWeightOutput"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/arm"
+                style="@style/CheckWeightTitle"/>
+
+            <TextView
+                android:id="@+id/takeoff_arm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CheckWeightOutput"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/moment"
+                style="@style/CheckWeightTitle"/>
+
+            <TextView
+                android:id="@+id/takeoff_moment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CheckWeightOutput"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
