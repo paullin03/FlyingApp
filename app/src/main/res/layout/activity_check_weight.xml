@@ -203,7 +203,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/summary"
-            style="@style/Header"/>
+            style="@style/ChecklistTitle"/>
 
         <TextView
             android:layout_width="wrap_content"

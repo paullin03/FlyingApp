@@ -21,7 +21,9 @@
             android:label="@string/weight_check" />
         <activity
             android:name=".Checklist"
-            android:label="@string/checklist"/>
+            android:label="@string/checklist" />
+        <activity
+            android:name=".SpecificChecklist"></activity>
     </application>
 
 </manifest>

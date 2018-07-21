@@ -21,5 +21,149 @@
     <string name="out_of_bounds">Out of COG Bounds</string>
     <string name="utility">Utility Category</string>
     <string name="normal">Normal Category</string>
-
+    <string-array name="checklist_titles">
+        <item>1. Pre Flight Inspection</item>
+        <item>2. Passenger Briefing</item>
+        <item>3. Start Check</item>
+        <item>4. Post Start</item>
+        <item>5. Runup Check</item>
+        <item>6. Pre Takeoff Check</item>
+        <item>7. Post Takeoff Check</item>
+        <item>8. Pre Landing Check</item>
+        <item>9. Post Landing Check</item>
+        <item>10. Shut Down Check</item>
+    </string-array>
+    <string-array name="checklist_items_0">
+        <item>A. Documents on board, check for defects</item>
+        <item>B. Fire extinguisher charged and secured</item>
+        <item>C. Switches &amp; avionics off</item>
+        <item>D. Master on</item>
+        <item>E. Flaps down</item>
+        <item>F. Master off</item>
+        <item>G. Fuel valve operation</item>
+        <item>H. Dip fuel tanks</item>
+        <item>I. Pre flight inspection</item>
+        <item>J. Complete W&amp;B/Flaps up</item>
+        <item>K. Sign journey log book</item>
+        <item>L. A/C secure</item>
+    </string-array>
+    <string-array name="checklist_items_1">
+        <item>A. Survival gear - location</item>
+        <item>B. ELT - location and function</item>
+        <item>C. Fire Extinguisher - location</item>
+        <item>D. Smoking - not permitted</item>
+        <item>E. Door and exits - operation</item>
+        <item>F. Seat belts - operation</item>
+        <item>G. Flight controls - don't touch</item>
+    </string-array>
+    <string-array name="checklist_items_2">
+        <item>A. Documents on board</item>
+        <item>B. Tie downs, control lock, pilot cover removed</item>
+        <item>C. Baggage, loose articles secure</item>
+        <item>D. Harness and doors secure</item>
+        <item>E. Avionics and electrics off</item>
+        <item>F. Circuit breakers check</item>
+        <item>G. Controls check</item>
+        <item>H. Trim check</item>
+        <item>I. Fuel on left tank</item>
+        <item>J. Mixture rich</item>
+        <item>K. Carb heat off</item>
+        <item>L. Throttle set</item>
+        <item>M. Primer as required</item>
+        <item>N. Brakes test and set</item>
+        <item>O. Master on</item>
+        <item>P. Lights as required</item>
+        <item>Q. Prop area clear</item>
+        <item>R. Magnetos on and start</item>
+        <item>S. Check oil pressure</item>
+        <item>T. Alternator on/charging</item>
+        <item>U. Throttle 1000 RPM</item>
+    </string-array>
+    <string-array name="checklist_items_3">
+        <item>A. Lean as required</item>
+        <item>B. Dead Mag Check (low energy)</item>
+        <item>C. Flaps check and retract</item>
+        <item>D. Set heading indicator</item>
+        <item>E. Fuel on right tank</item>
+        <item>F. Avionics and electrics as required</item>
+        <item>G. ATIS - Taxi clearance</item>
+        <item>H. Test Brakes</item>
+        <item>I. Flight instruments (while taxiing)</item>
+    </string-array>
+    <string-array name="checklist_items_4">
+        <item>A. Aircraft into wind, nose wheel straight</item>
+        <item>B. Brakes on</item>
+        <item>C. Fuel on both tanks</item>
+        <item>D. Mixture rich</item>
+        <item>E. Oil pressure green and temp normal</item>
+        <item>F. Area clear behind</item>
+        <item>G. Throttle 1700</item>
+        <item>H. Oil pressure green and temp normal</item>
+        <item>I. Suction check</item>
+        <item>J. Mag check (high energy)
+                    Max drop     125 RPM
+                    Max diff     50 RPM
+                    Not rough</item>
+        <item>K. Carb heat check (on/off)</item>
+        <item>L. Mixture check</item>
+        <item>M. Carb heat on</item>
+        <item>N. Full idle/Oil PSI/Voltage</item>
+        <item>O. Idle 1000</item>
+        <item>P. Carb heat off</item>
+    </string-array>
+    <string-array name="checklist_items_5">
+        <item>A. Harness and door secure</item>
+        <item>B. Baggage secure</item>
+        <item>C. Controls free</item>
+        <item>D. Trims set</item>
+        <item>E. Flaps as required</item>
+        <item>F. Take off briefing</item>
+        <item>G. Fuel on both and quantity</item>
+        <item>H. Primer locked</item>
+        <item>I. Master switch on</item>
+        <item>J. Mags both</item>
+        <item>K. Carb heat off</item>
+        <item>L. Mixture rich</item>
+        <item>M. Left to right flight instrument check</item>
+        <item>N. Avionics set as required</item>
+        <item>O. Pulse lights or landing light, strobes and transponder alt.</item>
+    </string-array>
+    <string-array name="checklist_items_6">
+        <item>A. Power - as per POH</item>
+        <item>B. Mixture - as per POH</item>
+        <item>C. Carb heat - check</item>
+        <item>D. Flaps - up</item>
+        <item>E. Compass - check</item>
+    </string-array>
+    <string-array name="checklist_items_7">
+        <item>A. Primer locked</item>
+        <item>B. Mags &amp; master on</item>
+        <item>C. Temp &amp; press green</item>
+        <item>D. Circuit breakers check</item>
+        <item>E. Carb heat on</item>
+        <item>F. Mixture rich</item>
+        <item>G. Fuel on (both) check quantity</item>
+        <item>H. Brake check</item>
+        <item>I. Harness/Baggage</item>
+        <item>J. Carb heat off (hot on approach)</item>
+    </string-array>
+    <string-array name="checklist_items_8">
+        <item>A. Flaps retracted</item>
+        <item>B. Carb heat off</item>
+        <item>C. Landing/pulse lights off</item>
+        <item>D. Strobes off</item>
+        <item>E. Transponder off</item>
+        <item>F. FLT plan closed</item>
+        <item>G. Down Time</item>
+    </string-array>
+    <string-array name="checklist_items_9">
+        <item>A. Throttle 1000RPM</item>
+        <item>B. ELT check (121.5)</item>
+        <item>C. Avionics &amp; electrics off, leave beacon on</item>
+        <item>D. Live mag check (safety)</item>
+        <item>E. Mixture idle cut-off</item>
+        <item>F. Mags &amp; Master off</item>
+        <item>G. Remove keys</item>
+        <item>H. Secure aircraft</item>
+    </string-array>
 </resources>

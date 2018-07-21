@@ -1,7 +1,5 @@
 package com.example.android.flyingapp;
 
-import android.content.res.ColorStateList;
-import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -93,39 +91,25 @@ public class CheckWeight extends AppCompatActivity {
         takeoffArm.setText(String.format("%.2f",armTakeoff));
         takeoffMoment.setText(String.format("%.2f",momentTakeoff));
 
-        if(armEmptyPlane<=LOWER_CG_LIMIT||armEmptyPlane>=UPPER_CG_LIMIT||
-                weightEmptyPlane<=LOWER_WEIGHT_LIMIT||weightEmptyPlane>=UPPER_WEIGHT_LIMIT||
-                (weightEmptyPlane-WEIGHT_INTERSECTION>=
-                        ((armEmptyPlane-LOWER_CG_LIMIT)*((UPPER_WEIGHT_LIMIT-WEIGHT_INTERSECTION)/(CG_INTERSECTION-LOWER_CG_LIMIT))))){
-            emptyPlaneRegion.setText(R.string.out_of_bounds);
-            emptyPlaneRegion.setTextColor(getResources().getColor(R.color.colorOutOfBounds));
-        }
-        else if(armEmptyPlane<UTILITY_CG_LIMIT&&weightEmptyPlane<UTILITY_WEIGHT_LIMIT){
-            emptyPlaneRegion.setText(R.string.utility);
-            emptyPlaneRegion.setTextColor(getResources().getColor(R.color.colorUtility));
-        }
-        else{
-            emptyPlaneRegion.setText(R.string.normal);
-            emptyPlaneRegion.setTextColor(getResources().getColor(R.color.colorNormal));
-        }
-
-        if(armTakeoff<=LOWER_CG_LIMIT||armTakeoff>=UPPER_CG_LIMIT||
-                weightTakeoff<=LOWER_WEIGHT_LIMIT||weightTakeoff>=UPPER_WEIGHT_LIMIT||
-                (weightTakeoff-WEIGHT_INTERSECTION>=
-                        ((armTakeoff-LOWER_CG_LIMIT)*((UPPER_WEIGHT_LIMIT-WEIGHT_INTERSECTION)/(CG_INTERSECTION-LOWER_CG_LIMIT))))){
-            takeoffRegion.setText(R.string.out_of_bounds);
-            takeoffRegion.setTextColor(getResources().getColor(R.color.colorOutOfBounds));
-        }
-        else if(armTakeoff<UTILITY_CG_LIMIT&&weightTakeoff<UTILITY_WEIGHT_LIMIT){
-            takeoffRegion.setText(R.string.utility);
-            takeoffRegion.setTextColor(getResources().getColor(R.color.colorUtility));
-        }
-        else{
-            takeoffRegion.setText(R.string.normal);
-            takeoffRegion.setTextColor(getResources().getColor(R.color.colorNormal));
-        }
-
+        checkCategory(armEmptyPlane, weightEmptyPlane, emptyPlaneRegion);
+        checkCategory(armTakeoff, weightTakeoff, takeoffRegion);
 
     }
-
+    public void checkCategory(double arm, double weight, TextView view){
+        if(arm<=LOWER_CG_LIMIT||arm>=UPPER_CG_LIMIT||
+                weight<=LOWER_WEIGHT_LIMIT||weight>=UPPER_WEIGHT_LIMIT||
+                (weight-WEIGHT_INTERSECTION>=
+                        ((arm-LOWER_CG_LIMIT)*((UPPER_WEIGHT_LIMIT-WEIGHT_INTERSECTION)/(CG_INTERSECTION-LOWER_CG_LIMIT))))){
+            view.setText(R.string.out_of_bounds);
+            view.setTextColor(getResources().getColor(R.color.colorOutOfBounds));
+        }
+        else if(arm<UTILITY_CG_LIMIT&&weight<UTILITY_WEIGHT_LIMIT){
+            view.setText(R.string.utility);
+            view.setTextColor(getResources().getColor(R.color.colorUtility));
+        }
+        else{
+            view.setText(R.string.normal);
+            view.setTextColor(getResources().getColor(R.color.colorNormal));
+        }
+    }
 }
